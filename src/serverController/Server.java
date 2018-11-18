@@ -17,7 +17,7 @@ public class Server {
 
     private static ServerSocket serverSocket = null;
     private static Socket clientSocket = null;
-    public static HashMap<String, ChatToClient> listClientSocket = new HashMap<>();
+    public static HashMap<String, ChatToClient> threads = new HashMap<>();
 
     public static void main(String args[]) throws InterruptedException {
         int portNumber = 9821;

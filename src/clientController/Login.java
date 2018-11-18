@@ -132,7 +132,7 @@ public class Login extends javax.swing.JFrame {
             chatToServer.sendMessage(user);
             if (chatToServer.getMassage().equals("accept")) {
                 //
-                JFrame testOnline = new TestOnline(chatToServer);
+                JFrame testOnline = new UserOnline(chatToServer);
                 testOnline.setVisible(true);
                 this.setVisible(false);
             } else {
